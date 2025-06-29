@@ -1,11 +1,11 @@
 "use client";
 
 import { useState, FormEvent } from "react";
+import Image from "next/image";
 import {
   Github,
   Linkedin,
   Send,
-  Mail,
   Briefcase,
   GraduationCap,
   Award,
@@ -18,7 +18,7 @@ import {
 const projectsData = [
   {
     title: "Organon - Domine seu tempo",
-    image: "images/projects/organon.png",
+    image: "/images/projects/organon.png",
     description:
       "Aplicativo completo de organização (To-Do, Calendário, Hábitos, Diário e Projetos)",
     technologies: ["Next.js", "TypeScript", "Tailwind", "Firebase"],
@@ -28,7 +28,7 @@ const projectsData = [
   },
   {
     title: "Vrum - (Em Desenvolvimento)",
-    image: "images/projects/vrum.png",
+    image: "/images/projects/vrum.png",
     description:
       "Aplicação web completa de um E-commerce para venda e compra de carros",
     technologies: ["NextJS", "Tailwind", "SpringBoot", "Docker", "PostgreSQL"],
@@ -38,17 +38,17 @@ const projectsData = [
   },
   {
     title: "FridgeEasy - Faculdade",
-    image: "images/projects/fridgeeasy.png",
+    image: "/images/projects/fridgeeasy.png",
     description:
       "Aplicação web completa com reconhecimento de imagem por IA (Inteligência Artificial) para criação e procura de receitas.",
     technologies: ["HTML", "CSS", "JavaScript", "Java", "Spark", "PostgreSQL"],
     category: ["Destaques", "Web"],
     repoLink: "https://github.com/renancmd/fridge-easy",
-    liveLink: "https://www.youtube.com/watch?v=2V4W8tueVYE",
+    liveLink: "https://github.com/renancmd/fridge-easy",
   },
   {
     title: "My Organizer",
-    image: "images/projects/my-organizer.png",
+    image: "/images/projects/my-organizer.png",
     description:
       "Aplicação web full stack. To-Do App com autenticação segura usando RestAPI, JWT e Bcrypt.",
     technologies: ["NextJS", "Java", "SpringBoot", "Docker", "PostgreSQL"],
@@ -58,7 +58,7 @@ const projectsData = [
   },
   {
     title: "Verde Diff - Faculdade",
-    image: "images/projects/verde-diff.png",
+    image: "/images/projects/verde-diff.png",
     description:
       "Comparador de Saídas para o questões do Verde - PUC Minas (Verde Diff)",
     technologies: ["Python"],
@@ -68,7 +68,7 @@ const projectsData = [
   },
   {
     title: "Procura Cine",
-    image: "images/projects/procura-cine.jpeg",
+    image: "/images/projects/procura-cine.jpeg",
     description:
       "Consome uma API para exibir informações de filmes para que usuários possam decidir o que assistir",
     technologies: ["NexJS", "TypeScript", "SASS"],
@@ -146,9 +146,12 @@ export default function PortfolioPage() {
         setFormData({ email: "", subject: "", message: "" });
       } else {
         const errorData = await response.json();
-        setFormStatus(errorData.error || "Falha ao enviar a mensagem.");
+        setFormStatus(
+          errorData.error ||
+            "Falha ao enviar a mensagem. Por favor, tente novamente."
+        );
       }
-    } catch (error) {
+    } catch {
       setFormStatus("Ocorreu um erro. Tente novamente mais tarde.");
     } finally {
       setIsSubmitting(false);
@@ -173,7 +176,7 @@ export default function PortfolioPage() {
       <header className="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
           <a href="#home" className="text-2xl font-bold text-cyan-400">
-            &lt;Renan/&gt;
+            Renan
           </a>
           <nav className="hidden md:flex space-x-8">
             {navLinks.map((link) => (
@@ -306,6 +309,7 @@ export default function PortfolioPage() {
                       href="https://www.cambly.com/en/certificate/verify/ac3c8d84?lang=en"
                       className="underline"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Cambly
                     </a>
@@ -343,9 +347,11 @@ export default function PortfolioPage() {
                   key={project.title}
                   className="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300"
                 >
-                  <img
+                  <Image
                     src={project.image}
                     alt={`Imagem do projeto ${project.title}`}
+                    width={500}
+                    height={300}
                     className="w-full h-48 object-cover"
                   />
                   <div className="p-6">
@@ -512,8 +518,7 @@ export default function PortfolioPage() {
       <footer className="bg-gray-900 py-6">
         <div className="container mx-auto px-6 text-center text-gray-400">
           <p>
-            &copy; {new Date().getFullYear()} Renan. Todos os direitos
-            reservados.
+            © {new Date().getFullYear()} Renan. Todos os direitos reservados.
           </p>
         </div>
       </footer>

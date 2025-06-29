@@ -14,7 +14,7 @@ export async function POST(request: NextRequest) {
       // Substitua por seu email verificado no Resend
       from: 'Portfolio Contact <onboarding@resend.dev>', 
       // O email para onde você quer receber as mensagens
-      to: ['renanmvc421@icloud.com'], 
+      to: ['renanmvc421@gmail.com'], 
       subject: subject,
       // O corpo do email em formato HTML
       html: `<p>Nova mensagem de <strong>${email}</strong>!</p><p><strong>Assunto:</strong> ${subject}</p><p>${message}</p>`,
