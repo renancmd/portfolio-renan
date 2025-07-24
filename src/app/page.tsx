@@ -225,7 +225,7 @@ export default function PortfolioPage() {
               Renan <span className="text-cyan-400">Mendes</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              Desenvolvedor Full-Stack
+              Software Engineer
             </p>
             <div className="flex justify-center space-x-6 mb-12">
               <a
