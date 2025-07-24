@@ -229,7 +229,7 @@ export default function PortfolioPage() {
             </p>
             <div className="flex justify-center space-x-6 mb-12">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/renan-mendes-vieira-de-carvalho/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-cyan-400 transition-transform duration-300 hover:scale-110"
@@ -295,6 +295,11 @@ export default function PortfolioPage() {
                     <strong>CS50 2025 - Havard</strong>
                     <br />
                     Curso intensivo da Universidade de Harvard (2025)
+                  </p>
+                  <p>
+                    <strong>AWS Cloud</strong>
+                    <br />
+                    AWS Educate - Em andamento
                   </p>
                 </div>
               </div>
@@ -494,7 +499,7 @@ export default function PortfolioPage() {
             </form>
             <div className="flex justify-center space-x-6 mt-16">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/renan-mendes-vieira-de-carvalho/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-cyan-400 transition-transform duration-300 hover:scale-110"
