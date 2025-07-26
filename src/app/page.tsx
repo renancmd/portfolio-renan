@@ -225,7 +225,7 @@ export default function PortfolioPage() {
               Renan <span className="text-cyan-400">Mendes</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              Software Engineer
+              Ciência da Computação
             </p>
             <div className="flex justify-center space-x-6 mb-12">
               <a
@@ -254,11 +254,11 @@ export default function PortfolioPage() {
                 Entre em Contato
               </a>
               <a
-                href="Currículo (Virtual).pdf"
+                href="Renan (Currículo) - Virtual.pdf"
                 download="curriculo-renan.pdf"
                 className="border border-cyan-500 text-cyan-500 font-bold py-3 px-8 rounded-full hover:bg-cyan-500 hover:text-gray-900 transition-all duration-300 flex items-center justify-center gap-2 w-full sm:w-auto"
               >
-                <Download size={20} /> Baixar CV
+                <Download size={20} /> Baixar Currículo
               </a>
             </div>
           </div>
