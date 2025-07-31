@@ -279,7 +279,9 @@ export default function PortfolioPage() {
                   <li>Spark & SpringBoot</li>
                   <li>Java & Python</li>
                   <li>PostgreSQL & Firebase</li>
-                  <li>Engenharia de Software & Metodologia Ágil</li>
+                  <li>Engenharia de Software & Métodologia Ágil</li>
+                  <li>Engenharia de requistos & BPMN</li>
+                  <li>SCRUM & Modelagem de Banco de Dados</li>
                 </ul>
               </div>
               <div className="bg-gray-900 p-8 rounded-lg shadow-lg">
