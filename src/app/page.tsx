@@ -255,7 +255,7 @@ export default function PortfolioPage() {
               </a>
               <a
                 href="Renan (Currículo) - Virtual.pdf"
-                download="curriculo-renan.pdf"
+                download="Renan (Currículo) - Virtual.pdf"
                 className="border border-cyan-500 text-cyan-500 font-bold py-3 px-8 rounded-full hover:bg-cyan-500 hover:text-gray-900 transition-all duration-300 flex items-center justify-center gap-2 w-full sm:w-auto"
               >
                 <Download size={20} /> Baixar Currículo
