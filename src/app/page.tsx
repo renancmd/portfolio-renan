@@ -27,14 +27,13 @@ const projectsData = [
     liveLink: "https://organon-red.vercel.app",
   },
   {
-    title: "Vrum - (Em Desenvolvimento)",
-    image: "/images/projects/vrum.png",
-    description:
-      "Aplicação web completa de um E-commerce para venda e compra de carros",
-    technologies: ["NextJS", "Tailwind", "SpringBoot", "Docker", "PostgreSQL"],
-    category: ["Destaques", "Web"],
-    repoLink: "https://github.com/renancmd/vrum",
-    liveLink: "https://meu-app-clima.com",
+    title: "Dashboard de Vendas",
+    image: '/images/projects/dashboard-de-vendas.png',
+    description: 'Dashboard interativo para analisar dados de vendas de uma rede de varejo global.',
+    technologies: ['Python', 'Docker', 'PostgreSQL'],
+    category: ['Destaques', 'Web'],
+    repoLink: 'https://github.com/renancmd/dashboard-de-vendas',
+    liveLink: 'https://dashboard-de-vendas-flvoapptduaaefh3mvadgsa.streamlit.app/'
   },
   {
     title: "FridgeEasy - Faculdade",
@@ -274,14 +273,14 @@ export default function PortfolioPage() {
                 <Briefcase size={40} className="text-cyan-400 mb-4" />
                 <h3 className="text-2xl font-bold mb-4">Habilidades</h3>
                 <ul className="list-disc list-inside text-gray-300 space-y-2">
-                  <li>React & Next.js</li>
-                  <li>TypeScript & JavaScript</li>
-                  <li>Spark & SpringBoot</li>
                   <li>Java & Python</li>
                   <li>PostgreSQL & Firebase</li>
+                  <li>SCRUM & Modelagem de Banco de Dados</li>
+                  <li>Spark & SpringBoot</li>
                   <li>Engenharia de Software & Métodologia Ágil</li>
                   <li>Engenharia de requistos & BPMN</li>
-                  <li>SCRUM & Modelagem de Banco de Dados</li>
+                  <li>React & Next.js</li>
+                  <li>TypeScript & JavaScript</li>
                 </ul>
               </div>
               <div className="bg-gray-900 p-8 rounded-lg shadow-lg">
@@ -292,11 +291,6 @@ export default function PortfolioPage() {
                     <strong>Ciência da Computação</strong>
                     <br />
                     PUC Minas (2024 - Atualmente)
-                  </p>
-                  <p>
-                    <strong>CS50 2025 - Havard</strong>
-                    <br />
-                    Curso intensivo da Universidade de Harvard (2025)
                   </p>
                   <p>
                     <strong>AWS Cloud</strong>
