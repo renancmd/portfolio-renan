@@ -273,13 +273,13 @@ export default function PortfolioPage() {
                 <Briefcase size={40} className="text-cyan-400 mb-4" />
                 <h3 className="text-2xl font-bold mb-4">Habilidades</h3>
                 <ul className="list-disc list-inside text-gray-300 space-y-2">
+                  <li>Pentest & SecTools</li>
                   <li>Java & Python</li>
+                  <li>C/C++ & Lua</li>
+                  <li>Redes e Protocolos</li>
+                  <li>VMs & Linux Avançado</li>
                   <li>PostgreSQL & Firebase</li>
-                  <li>SCRUM & Modelagem de Banco de Dados</li>
-                  <li>Spark & SpringBoot</li>
-                  <li>Engenharia de Software & Métodologia Ágil</li>
-                  <li>Engenharia de requistos & BPMN</li>
-                  <li>React & Next.js</li>
+                  <li>Bash & OWASP/LGPD</li>
                   <li>TypeScript & JavaScript</li>
                 </ul>
               </div>
@@ -293,9 +293,11 @@ export default function PortfolioPage() {
                     PUC Minas (2024 - Atualmente)
                   </p>
                   <p>
-                    <strong>AWS Cloud</strong>
+                    <strong>TryHackMe</strong>
                     <br />
-                    AWS Educate - Em andamento
+                    CyberSecurity 101
+                    <br />
+                    Jr Penetration Tester
                   </p>
                 </div>
               </div>
